@@ -1,0 +1,115 @@
+# Safety warning templates
+# Used when MODEL_PROVIDER=template
+
+severity_messages:
+  low: "This medicine is generally safe when taken as directed."
+  medium: "Take this medicine carefully. Follow dosage instructions and consult your doctor if side effects occur."
+  high: "This medicine requires careful monitoring. Consult your doctor before making any changes."
+  critical: "This medicine has serious risks. Follow your doctor's instructions exactly and seek immediate help for any adverse effects."
+
+drowsiness_warning: "⚠ This medicine may cause drowsiness. Do not drive, operate machinery, or consume alcohol while taking it."
+
+pregnancy_general: "Consult your doctor before taking this medicine if you are pregnant or breastfeeding."
+
+pediatric_general: "Dosage must be adjusted by weight for children. Do not give adult doses to children."
+
+geriatric_general: "Elderly patients may need lower doses. Monitor closely for side effects."
+
+by_drug_class:
+  "Benzodiazepine":
+    side_effects:
+      - "Drowsiness"
+      - "Dizziness"
+      - "Confusion"
+      - "Memory problems"
+    serious_side_effects:
+      - "Respiratory depression"
+      - "Dependence and withdrawal"
+    contraindications:
+      - "Severe respiratory disease"
+      - "Sleep apnoea"
+      - "Myasthenia gravis"
+    drowsiness: true
+    severity: "medium"
+
+  "Penicillin Antibiotic":
+    side_effects:
+      - "Diarrhoea"
+      - "Nausea"
+      - "Rash"
+    serious_side_effects:
+      - "Anaphylaxis"
+      - "C. difficile colitis"
+    contraindications:
+      - "Penicillin allergy"
+    drowsiness: false
+    severity: "low"
+
+  "NSAID":
+    side_effects:
+      - "Stomach upset"
+      - "Nausea"
+      - "Heartburn"
+    serious_side_effects:
+      - "Gastrointestinal bleeding"
+      - "Kidney impairment"
+      - "Cardiovascular events"
+    contraindications:
+      - "Active peptic ulcer"
+      - "Severe renal impairment"
+      - "Third trimester of pregnancy"
+    drowsiness: false
+    severity: "medium"
+
+  "Statin":
+    side_effects:
+      - "Muscle aches"
+      - "Headache"
+      - "Nausea"
+    serious_side_effects:
+      - "Rhabdomyolysis"
+      - "Liver damage"
+    contraindications:
+      - "Active liver disease"
+      - "Pregnancy"
+    drowsiness: false
+    severity: "low"
+
+  "Beta Blocker":
+    side_effects:
+      - "Fatigue"
+      - "Cold hands and feet"
+      - "Dizziness"
+    serious_side_effects:
+      - "Bradycardia"
+      - "Bronchospasm in asthmatics"
+    contraindications:
+      - "Severe asthma"
+      - "Second or third degree AV block"
+    drowsiness: true
+    severity: "medium"
+
+  "Antihistamine":
+    side_effects:
+      - "Drowsiness"
+      - "Dry mouth"
+      - "Blurred vision"
+    serious_side_effects:
+      - "Urinary retention"
+      - "Arrhythmia (rare)"
+    contraindications:
+      - "Glaucoma"
+      - "Enlarged prostate"
+    drowsiness: true
+    severity: "low"
+
+default_side_effects:
+  - "Nausea"
+  - "Headache"
+  - "Stomach upset"
+
+default_serious:
+  - "Allergic reaction — seek immediate medical attention if rash, swelling, or difficulty breathing occurs"
+
+default_contraindications:
+  - "Known hypersensitivity to this medicine or its components"

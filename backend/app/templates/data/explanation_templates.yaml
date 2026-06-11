@@ -1,0 +1,79 @@
+# Medicine explanation templates
+# Used when MODEL_PROVIDER=template
+
+default:
+  explanation: "This medicine is prescribed by your doctor to treat your condition. Take it exactly as directed on the prescription."
+  use_case: "As directed by your prescribing physician."
+  mechanism: "Acts on the body to treat the specified condition."
+  how_to_take: "Take as directed by your doctor. Do not exceed the prescribed dose."
+
+by_drug_class:
+  "Analgesic / Antipyretic":
+    explanation: "This is a pain-relieving and fever-reducing medicine. It helps reduce mild to moderate pain and brings down high temperature."
+    use_case: "Pain relief and fever reduction."
+    mechanism: "Reduces pain signals and lowers fever by acting on the central nervous system."
+    how_to_take: "Take with or without food. Do not exceed the recommended daily dose."
+
+  "Penicillin Antibiotic":
+    explanation: "This is an antibiotic that kills bacteria causing your infection. Complete the full course even if you feel better."
+    use_case: "Treatment of bacterial infections."
+    mechanism: "Destroys bacteria by preventing them from building their protective cell wall."
+    how_to_take: "Take at evenly spaced intervals. Finish the entire prescribed course."
+
+  "NSAID":
+    explanation: "This is an anti-inflammatory medicine that reduces pain, swelling, and fever."
+    use_case: "Pain, inflammation, and fever relief."
+    mechanism: "Blocks chemicals in the body that cause pain and swelling."
+    how_to_take: "Take with food or milk to protect your stomach."
+
+  "Proton Pump Inhibitor":
+    explanation: "This medicine reduces the amount of acid your stomach produces, helping heal acid-related conditions."
+    use_case: "Acid reflux, stomach ulcers, and heartburn."
+    mechanism: "Blocks the acid pump in the stomach lining."
+    how_to_take: "Usually taken 30–60 minutes before a meal."
+
+  "Beta Blocker":
+    explanation: "This medicine slows your heart rate and lowers blood pressure to protect your heart."
+    use_case: "High blood pressure, heart conditions, and anxiety."
+    mechanism: "Blocks adrenaline effects on the heart, reducing heart rate and blood pressure."
+    how_to_take: "Do not stop suddenly without consulting your doctor."
+
+  "Macrolide Antibiotic":
+    explanation: "This is an antibiotic used to treat respiratory and other bacterial infections."
+    use_case: "Chest infections, skin infections, and STIs."
+    mechanism: "Stops bacteria from producing proteins they need to grow."
+    how_to_take: "Take as directed. Some forms should be taken on an empty stomach."
+
+  "Benzodiazepine":
+    explanation: "This medicine reduces anxiety and promotes relaxation. It may cause drowsiness."
+    use_case: "Anxiety, panic disorders, and muscle relaxation."
+    mechanism: "Enhances the effect of a calming chemical in the brain called GABA."
+    how_to_take: "Take only as prescribed. Do not drive or operate machinery."
+
+  "Statin":
+    explanation: "This medicine lowers cholesterol in your blood to reduce the risk of heart disease."
+    use_case: "High cholesterol and heart disease prevention."
+    mechanism: "Blocks an enzyme in the liver that makes cholesterol."
+    how_to_take: "Usually taken in the evening. Report any unexplained muscle pain."
+
+  "ACE Inhibitor":
+    explanation: "This medicine relaxes blood vessels to lower blood pressure and protect the heart and kidneys."
+    use_case: "High blood pressure, heart failure, and kidney protection in diabetes."
+    mechanism: "Blocks a hormone that tightens blood vessels."
+    how_to_take: "Take at the same time each day. Rise slowly from sitting or lying."
+
+  "Antihistamine":
+    explanation: "This medicine blocks histamine to relieve allergic symptoms."
+    use_case: "Allergies, hay fever, hives, and itching."
+    mechanism: "Blocks histamine receptors that cause allergic reactions."
+    how_to_take: "May cause drowsiness. Avoid alcohol. Some formulations are non-drowsy."
+
+language_overrides:
+  ta:
+    default:
+      explanation: "இந்த மருந்தை உங்கள் மருத்துவர் குறிப்பிட்ட நோய்க்கு பரிந்துரைத்துள்ளார். மருந்துச் சீட்டில் கூறியபடி எடுத்துக்கொள்ளவும்."
+      how_to_take: "மருத்துவர் சொன்னபடி எடுக்கவும். அளவை மீறாதீர்கள்."
+  hi:
+    default:
+      explanation: "यह दवा आपके डॉक्टर ने आपकी स्थिति के उपचार के लिए दी है। प्रिस्क्रिप्शन के अनुसार लें।"
+      how_to_take: "डॉक्टर के निर्देशानुसार लें। निर्धारित खुराक से अधिक न लें।"

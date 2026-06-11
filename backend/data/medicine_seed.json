@@ -1,0 +1,622 @@
+[
+  {
+    "name": "Paracetamol",
+    "generic_name": "Acetaminophen",
+    "aliases": ["Tylenol", "Calpol", "Panadol", "Acetaminophen"],
+    "brand_names": ["Tylenol", "Panadol", "Calpol", "Efferalgan"],
+    "drug_class": "Analgesic / Antipyretic",
+    "use_case": "Relief of mild to moderate pain and reduction of fever. Used for headaches, toothaches, muscle aches, colds, and flu.",
+    "mechanism": "Inhibits prostaglandin synthesis centrally; exact mechanism incompletely understood.",
+    "dosage_forms": ["Tablets", "Capsules", "Syrup", "Suppositories", "Effervescent tablets"],
+    "common_dosages": {
+      "adult": "500mg–1000mg every 4–6 hours. Maximum 4g/day.",
+      "pediatric": "10–15mg/kg every 4–6 hours. Max 5 doses/24h.",
+      "elderly": "500mg every 6 hours; avoid prolonged high doses."
+    },
+    "side_effects": {
+      "common": ["Nausea (rare at therapeutic doses)", "Rash (uncommon)"],
+      "serious": ["Hepatotoxicity (overdose)", "Acute liver failure", "Stevens-Johnson syndrome (rare)"]
+    },
+    "causes_drowsiness": false,
+    "contraindications": ["Severe hepatic impairment", "Paracetamol hypersensitivity"],
+    "interactions": ["Warfarin (increased INR at high doses)", "Alcohol (hepatotoxicity)"],
+    "age_warnings": {
+      "pediatric": "Weight-based dosing mandatory in children. Do not exceed 5 doses in 24 hours.",
+      "geriatric": "Use minimum effective dose in elderly.",
+      "pregnancy": "Category B – considered safe at therapeutic doses during pregnancy."
+    },
+    "alternatives": ["Ibuprofen", "Aspirin (adults only)", "Naproxen"],
+    "severity_level": "low",
+    "otc_available": true,
+    "schedule": "Not scheduled"
+  },
+  {
+    "name": "Amoxicillin",
+    "generic_name": "Amoxicillin",
+    "aliases": ["Amoxil", "Trimox", "Moxatag"],
+    "brand_names": ["Amoxil", "Trimox", "Moxatag", "Clamoxyl"],
+    "drug_class": "Penicillin Antibiotic",
+    "use_case": "Bacterial infections including ear infections, tonsillitis, chest infections, urinary tract infections, and dental abscesses.",
+    "mechanism": "Beta-lactam antibiotic that inhibits bacterial cell wall synthesis by binding penicillin-binding proteins.",
+    "dosage_forms": ["Capsules", "Tablets", "Oral suspension", "Chewable tablets"],
+    "common_dosages": {
+      "adult": "250–500mg every 8 hours or 500–875mg every 12 hours for 7–14 days.",
+      "pediatric": "20–90mg/kg/day divided every 8–12 hours (weight-based).",
+      "elderly": "Standard adult dose; reduce in renal impairment."
+    },
+    "side_effects": {
+      "common": ["Diarrhoea", "Nausea", "Rash", "Vomiting", "Headache"],
+      "serious": ["Anaphylaxis", "C. difficile colitis", "Stevens-Johnson syndrome", "Hepatotoxicity"]
+    },
+    "causes_drowsiness": false,
+    "contraindications": ["Penicillin allergy", "Mononucleosis (risk of widespread rash)"],
+    "interactions": ["Warfarin (altered INR)", "Methotrexate (increased toxicity)", "Oral contraceptives (reduced efficacy)"],
+    "age_warnings": {
+      "pediatric": "Safe in children. Adjust dose by weight. Oral suspension available.",
+      "geriatric": "Reduce dose if CrCl <30 mL/min.",
+      "pregnancy": "Category B – generally safe during pregnancy."
+    },
+    "alternatives": ["Azithromycin", "Clarithromycin", "Doxycycline", "Cefalexin"],
+    "severity_level": "low",
+    "otc_available": false,
+    "schedule": "Prescription only"
+  },
+  {
+    "name": "Ibuprofen",
+    "generic_name": "Ibuprofen",
+    "aliases": ["Advil", "Nurofen", "Motrin", "Brufen"],
+    "brand_names": ["Advil", "Nurofen", "Motrin", "Brufen"],
+    "drug_class": "NSAID (Non-steroidal anti-inflammatory drug)",
+    "use_case": "Pain relief, fever, and inflammation. Used for headaches, dental pain, menstrual cramps, arthritis, muscle pain, and minor injury.",
+    "mechanism": "Non-selective COX-1 and COX-2 inhibitor. Reduces prostaglandin synthesis, decreasing pain and inflammation.",
+    "dosage_forms": ["Tablets", "Capsules", "Syrup", "Gel (topical)", "Suppositories"],
+    "common_dosages": {
+      "adult": "200–400mg every 4–6 hours. Maximum 2400mg/day (OTC 1200mg/day).",
+      "pediatric": "5–10mg/kg every 6–8 hours. Max 40mg/kg/day. Not for <3 months.",
+      "elderly": "Use lowest effective dose. Avoid long-term use."
+    },
+    "side_effects": {
+      "common": ["GI upset", "Nausea", "Heartburn", "Dizziness", "Headache"],
+      "serious": ["GI bleeding/ulcers", "Renal impairment", "Cardiovascular events (MI, stroke)", "Severe skin reactions"]
+    },
+    "causes_drowsiness": false,
+    "contraindications": ["Active GI ulcer", "Severe renal/hepatic impairment", "NSAID hypersensitivity", "Aspirin-sensitive asthma", "Pregnancy (>20 weeks)"],
+    "interactions": ["Warfarin (bleeding risk)", "ACE inhibitors (reduced efficacy)", "SSRIs (GI bleeding)", "Diuretics (reduced effect)", "Methotrexate (toxicity)"],
+    "age_warnings": {
+      "pediatric": "Not for infants <3 months. Use with caution in dehydrated children.",
+      "geriatric": "High risk of GI bleeding and renal impairment. Use minimum dose with PPI cover.",
+      "pregnancy": "Avoid after 20 weeks – risk of oligohydramnios. Avoid in third trimester."
+    },
+    "alternatives": ["Paracetamol", "Naproxen", "Diclofenac", "Celecoxib"],
+    "severity_level": "medium",
+    "otc_available": true,
+    "schedule": "Not scheduled (OTC doses)"
+  },
+  {
+    "name": "Metformin",
+    "generic_name": "Metformin hydrochloride",
+    "aliases": ["Glucophage", "Fortamet", "Glumetza"],
+    "brand_names": ["Glucophage", "Fortamet", "Glumetza", "Riomet"],
+    "drug_class": "Biguanide antidiabetic",
+    "use_case": "Type 2 diabetes mellitus management. First-line oral antidiabetic agent. Also used off-label for PCOS and prediabetes.",
+    "mechanism": "Decreases hepatic glucose production, reduces intestinal glucose absorption, and improves insulin sensitivity.",
+    "dosage_forms": ["Tablets", "Extended-release tablets", "Oral solution"],
+    "common_dosages": {
+      "adult": "Start 500mg twice daily or 850mg once daily with meals. Max 2550mg/day.",
+      "pediatric": "10–16 years: 500mg twice daily with meals. Max 2000mg/day.",
+      "elderly": "Start low; avoid if eGFR <30. Reduce dose if eGFR 30–45."
+    },
+    "side_effects": {
+      "common": ["Nausea", "Diarrhoea", "Abdominal pain", "Metallic taste", "Vitamin B12 deficiency (long-term)"],
+      "serious": ["Lactic acidosis (rare, life-threatening)", "Severe GI distress"]
+    },
+    "causes_drowsiness": false,
+    "contraindications": ["eGFR <30 mL/min", "Active or unstable heart failure", "Liver disease", "IV contrast dye procedure (hold 48h)"],
+    "interactions": ["Alcohol (lactic acidosis risk)", "IV contrast media", "Cimetidine (increases metformin levels)", "Carbonic anhydrase inhibitors"],
+    "age_warnings": {
+      "pediatric": "Approved ≥10 years for T2DM. Not for T1DM.",
+      "geriatric": "Monitor eGFR annually. Risk of lactic acidosis increases with age.",
+      "pregnancy": "Insulin preferred in pregnancy; metformin used in some guidelines."
+    },
+    "alternatives": ["Glipizide", "Sitagliptin", "Empagliflozin", "Liraglutide", "Insulin"],
+    "severity_level": "medium",
+    "otc_available": false,
+    "schedule": "Prescription only"
+  },
+  {
+    "name": "Atorvastatin",
+    "generic_name": "Atorvastatin calcium",
+    "aliases": ["Lipitor", "Torvast"],
+    "brand_names": ["Lipitor", "Torvast"],
+    "drug_class": "HMG-CoA reductase inhibitor (Statin)",
+    "use_case": "Hypercholesterolemia, dyslipidaemia. Reduces LDL cholesterol and triglycerides. Cardiovascular risk reduction.",
+    "mechanism": "Competitively inhibits HMG-CoA reductase, the rate-limiting enzyme in hepatic cholesterol synthesis.",
+    "dosage_forms": ["Tablets"],
+    "common_dosages": {
+      "adult": "10–80mg once daily. Start at 10–20mg; titrate based on LDL targets.",
+      "pediatric": "10–17 years (heterozygous FH): 10–20mg/day.",
+      "elderly": "Standard adult dosing; no specific adjustment."
+    },
+    "side_effects": {
+      "common": ["Muscle pain (myalgia)", "Headache", "Nausea", "Joint pain", "Diarrhoea"],
+      "serious": ["Rhabdomyolysis", "Hepatotoxicity", "Myopathy", "Elevated liver enzymes"]
+    },
+    "causes_drowsiness": false,
+    "contraindications": ["Active liver disease", "Pregnancy", "Breastfeeding", "Unexplained persistent elevated transaminases"],
+    "interactions": ["Fibrates (myopathy risk)", "CYP3A4 inhibitors (e.g., erythromycin, azole antifungals)", "Digoxin", "Warfarin", "Cyclosporin"],
+    "age_warnings": {
+      "pediatric": "Use only in children ≥10 years with familial hypercholesterolemia.",
+      "geriatric": "Standard dosing; monitor for muscle symptoms.",
+      "pregnancy": "Category X – absolutely contraindicated. Teratogenic."
+    },
+    "alternatives": ["Rosuvastatin", "Simvastatin", "Pravastatin", "Fluvastatin", "Ezetimibe"],
+    "severity_level": "medium",
+    "otc_available": false,
+    "schedule": "Prescription only"
+  },
+  {
+    "name": "Omeprazole",
+    "generic_name": "Omeprazole magnesium",
+    "aliases": ["Losec", "Prilosec", "Zegerid"],
+    "brand_names": ["Losec", "Prilosec", "Zegerid"],
+    "drug_class": "Proton Pump Inhibitor (PPI)",
+    "use_case": "Gastro-oesophageal reflux disease (GORD/GERD), peptic ulcers, H. pylori eradication, Zollinger-Ellison syndrome, NSAID-induced ulcer prevention.",
+    "mechanism": "Irreversibly inhibits the H+/K+ ATPase proton pump in gastric parietal cells, blocking acid secretion.",
+    "dosage_forms": ["Capsules", "Tablets", "IV injection", "Oral suspension"],
+    "common_dosages": {
+      "adult": "20mg once daily (maintenance); 40mg once daily (acute treatment). Before breakfast.",
+      "pediatric": "1mg/kg/day (max 20mg) for GORD in children ≥1 year.",
+      "elderly": "Standard adult dose."
+    },
+    "side_effects": {
+      "common": ["Headache", "Diarrhoea", "Nausea", "Abdominal pain", "Flatulence"],
+      "serious": ["C. difficile infection (long-term)", "Hypomagnesaemia", "Osteoporosis (long-term)", "Vitamin B12 deficiency", "Acute interstitial nephritis"]
+    },
+    "causes_drowsiness": false,
+    "contraindications": ["Rilpivirine combination (reduces efficacy)", "Hypersensitivity to PPIs"],
+    "interactions": ["Clopidogrel (reduced antiplatelet effect)", "Methotrexate", "Ketoconazole (reduced absorption)", "Rilpivirine"],
+    "age_warnings": {
+      "pediatric": "Use for children ≥1 year; weight-based dosing.",
+      "geriatric": "Long-term use: monitor for hypomagnesaemia and bone density.",
+      "pregnancy": "Category C – use only if clearly needed."
+    },
+    "alternatives": ["Pantoprazole", "Esomeprazole", "Lansoprazole", "Rabeprazole", "Ranitidine (H2 blocker)"],
+    "severity_level": "low",
+    "otc_available": true,
+    "schedule": "Not scheduled (OTC doses)"
+  },
+  {
+    "name": "Lisinopril",
+    "generic_name": "Lisinopril",
+    "aliases": ["Zestril", "Prinivil", "Qbrelis"],
+    "brand_names": ["Zestril", "Prinivil", "Qbrelis"],
+    "drug_class": "ACE Inhibitor (Angiotensin-Converting Enzyme Inhibitor)",
+    "use_case": "Hypertension, heart failure, diabetic nephropathy, post-MI cardioprotection.",
+    "mechanism": "Inhibits ACE, preventing conversion of angiotensin I to angiotensin II, resulting in vasodilation and reduced aldosterone secretion.",
+    "dosage_forms": ["Tablets", "Oral solution"],
+    "common_dosages": {
+      "adult": "Hypertension: 10mg once daily (initial); range 10–40mg/day.",
+      "pediatric": "Children ≥6 years: 0.07mg/kg/day (max 5mg initially).",
+      "elderly": "Start at 2.5–5mg/day; titrate carefully."
+    },
+    "side_effects": {
+      "common": ["Dry cough (10–15%)", "Dizziness", "Headache", "Fatigue", "Hypotension (first dose)"],
+      "serious": ["Angioedema (life-threatening)", "Hyperkalaemia", "Acute kidney injury", "Teratogenicity"]
+    },
+    "causes_drowsiness": false,
+    "contraindications": ["History of angioedema", "Bilateral renal artery stenosis", "Pregnancy", "Concurrent aliskiren in diabetes/CKD"],
+    "interactions": ["NSAIDs (reduced efficacy, nephrotoxicity)", "Potassium-sparing diuretics (hyperkalaemia)", "Lithium (toxicity)", "Aliskiren"],
+    "age_warnings": {
+      "pediatric": "Safety established in children ≥6 years with hypertension.",
+      "geriatric": "Start at low dose; risk of hypotension and hyperkalaemia.",
+      "pregnancy": "Category D (2nd/3rd trimester) – causes fetal renal toxicity. Contraindicated."
+    },
+    "alternatives": ["Ramipril", "Enalapril", "Losartan", "Amlodipine", "Bisoprolol"],
+    "severity_level": "medium",
+    "otc_available": false,
+    "schedule": "Prescription only"
+  },
+  {
+    "name": "Amlodipine",
+    "generic_name": "Amlodipine besylate",
+    "aliases": ["Norvasc", "Istin", "Lotrel"],
+    "brand_names": ["Norvasc", "Istin"],
+    "drug_class": "Calcium Channel Blocker (Dihydropyridine)",
+    "use_case": "Hypertension and angina pectoris. Also used in coronary artery disease.",
+    "mechanism": "Inhibits calcium influx through L-type calcium channels in vascular smooth muscle and cardiac muscle, causing vasodilation.",
+    "dosage_forms": ["Tablets"],
+    "common_dosages": {
+      "adult": "5mg once daily initially; may increase to 10mg once daily.",
+      "pediatric": "Children 6–17 years: 2.5–5mg once daily.",
+      "elderly": "Start at 2.5mg; titrate cautiously."
+    },
+    "side_effects": {
+      "common": ["Peripheral oedema (ankle swelling)", "Headache", "Flushing", "Dizziness", "Fatigue", "Palpitations"],
+      "serious": ["Severe hypotension", "Angina worsening (initiation)", "Heart failure exacerbation"]
+    },
+    "causes_drowsiness": false,
+    "contraindications": ["Cardiogenic shock", "Severe aortic stenosis", "Amlodipine hypersensitivity"],
+    "interactions": ["Simvastatin (max 20mg with amlodipine)", "CYP3A4 inhibitors (increase levels)", "Tacrolimus"],
+    "age_warnings": {
+      "pediatric": "Safe ≥6 years for hypertension.",
+      "geriatric": "Start low; fall risk due to hypotension.",
+      "pregnancy": "Category C – use only if benefit outweighs risk."
+    },
+    "alternatives": ["Nifedipine", "Felodipine", "Lercanidipine", "Lisinopril", "Losartan"],
+    "severity_level": "low",
+    "otc_available": false,
+    "schedule": "Prescription only"
+  },
+  {
+    "name": "Aspirin",
+    "generic_name": "Acetylsalicylic acid",
+    "aliases": ["ASA", "Disprin", "Ecotrin", "Bayer Aspirin"],
+    "brand_names": ["Bayer Aspirin", "Disprin", "Ecotrin", "Bufferin"],
+    "drug_class": "NSAID / Antiplatelet / Analgesic",
+    "use_case": "Pain relief, fever, anti-inflammatory. Low-dose (75–100mg) for antiplatelet therapy in cardiovascular disease prevention.",
+    "mechanism": "Irreversibly inhibits COX-1 and COX-2. Antiplatelet effect via irreversible COX-1 inhibition in platelets.",
+    "dosage_forms": ["Tablets", "Enteric-coated tablets", "Effervescent tablets", "Chewable tablets"],
+    "common_dosages": {
+      "adult": "Pain/fever: 300–900mg every 4–6h (max 4g/day). Antiplatelet: 75–100mg once daily.",
+      "pediatric": "CONTRAINDICATED under 16 years (Reye's syndrome risk).",
+      "elderly": "Antiplatelet dose: 75mg once daily with PPI cover."
+    },
+    "side_effects": {
+      "common": ["GI irritation", "Nausea", "Indigestion", "Prolonged bleeding time"],
+      "serious": ["GI bleeding/ulcers", "Haemorrhagic stroke", "Reye's syndrome (children)", "Salicylate toxicity"]
+    },
+    "causes_drowsiness": false,
+    "contraindications": ["Age <16 years", "Active peptic ulcer", "Bleeding disorders", "NSAID hypersensitivity", "Severe renal/hepatic impairment"],
+    "interactions": ["Warfarin (major bleeding risk)", "Other NSAIDs", "Methotrexate", "Valproate", "ACE inhibitors (reduced effect)"],
+    "age_warnings": {
+      "pediatric": "CONTRAINDICATED under 16 years. Risk of Reye's syndrome – potentially fatal encephalopathy and liver damage.",
+      "geriatric": "High GI bleeding risk. Co-prescribe PPI. Fall/bleeding risk.",
+      "pregnancy": "Avoid in third trimester. Low-dose under specialist guidance for pre-eclampsia prevention."
+    },
+    "alternatives": ["Paracetamol (pain)", "Ibuprofen (inflammation)", "Clopidogrel (antiplatelet)", "Ticagrelor"],
+    "severity_level": "medium",
+    "otc_available": true,
+    "schedule": "Not scheduled"
+  },
+  {
+    "name": "Cetirizine",
+    "generic_name": "Cetirizine hydrochloride",
+    "aliases": ["Zyrtec", "Reactine", "Zirtec", "Rigix"],
+    "brand_names": ["Zyrtec", "Reactine", "Zirtec"],
+    "drug_class": "Second-generation antihistamine (H1 antagonist)",
+    "use_case": "Allergic rhinitis (hay fever), urticaria (hives), chronic idiopathic urticaria, allergic conjunctivitis.",
+    "mechanism": "Selective peripheral H1 receptor antagonist with minimal CNS penetration. Reduces histamine-mediated symptoms.",
+    "dosage_forms": ["Tablets", "Liquid-filled capsules", "Oral solution", "Chewable tablets"],
+    "common_dosages": {
+      "adult": "10mg once daily or 5mg twice daily.",
+      "pediatric": "2–5 years: 2.5mg/day. 6–11 years: 5–10mg/day. ≥12: 10mg/day.",
+      "elderly": "5mg once daily (if CrCl 11–31 mL/min)."
+    },
+    "side_effects": {
+      "common": ["Drowsiness (less than 1st gen)", "Dry mouth", "Fatigue", "Headache", "Dizziness"],
+      "serious": ["Urinary retention (BPH patients)", "QT prolongation (high doses)", "Severe skin reactions (rare)"]
+    },
+    "causes_drowsiness": true,
+    "contraindications": ["End-stage renal disease (CrCl <10)", "Cetirizine hypersensitivity", "Hydroxyzine hypersensitivity"],
+    "interactions": ["CNS depressants (additive sedation)", "Alcohol", "Theophylline (reduced clearance)"],
+    "age_warnings": {
+      "pediatric": "Age-appropriate dosing required. Not for infants <2 years (consult doctor).",
+      "geriatric": "May cause urinary retention in elderly men with BPH. Sedation risk.",
+      "pregnancy": "Category B – generally considered safe."
+    },
+    "alternatives": ["Loratadine", "Fexofenadine", "Levocetirizine", "Desloratadine"],
+    "severity_level": "low",
+    "otc_available": true,
+    "schedule": "Not scheduled"
+  },
+  {
+    "name": "Metronidazole",
+    "generic_name": "Metronidazole",
+    "aliases": ["Flagyl", "Metrogyl", "Rozex"],
+    "brand_names": ["Flagyl", "Metrogyl", "Rozex"],
+    "drug_class": "Nitroimidazole antibiotic / Antiprotozoal",
+    "use_case": "Anaerobic bacterial infections, protozoal infections (Giardia, Trichomonas, Entamoeba), H. pylori (combination), C. difficile, BV.",
+    "mechanism": "Enters cells, where its nitro group is reduced to reactive intermediates that damage DNA in anaerobic organisms.",
+    "dosage_forms": ["Tablets", "IV infusion", "Topical gel", "Vaginal gel", "Suspension"],
+    "common_dosages": {
+      "adult": "400–500mg three times daily for 5–7 days (infections). 2g single dose (Trichomonas).",
+      "pediatric": "7.5mg/kg every 8 hours.",
+      "elderly": "Standard adult dose; use with caution in hepatic impairment."
+    },
+    "side_effects": {
+      "common": ["Metallic taste", "Nausea", "Headache", "Dizziness", "Dark urine (harmless)"],
+      "serious": ["Peripheral neuropathy (prolonged use)", "Encephalopathy", "Seizures", "Disulfiram-like reaction with alcohol"]
+    },
+    "causes_drowsiness": true,
+    "contraindications": ["First trimester of pregnancy (high-dose systemic)", "Alcohol consumption during and 48h after treatment"],
+    "interactions": ["Alcohol (disulfiram-like reaction – severe)", "Warfarin (increased anticoagulant effect)", "Lithium (toxicity)", "Cyclosporin"],
+    "age_warnings": {
+      "pediatric": "Use with caution; adjust by weight.",
+      "geriatric": "Risk of peripheral neuropathy with prolonged use.",
+      "pregnancy": "Avoid high-dose systemic use in first trimester. Low-risk in 2nd/3rd trimester at standard doses."
+    },
+    "alternatives": ["Tinidazole", "Secnidazole", "Clindamycin (anaerobes)", "Vancomycin (C. diff)"],
+    "severity_level": "medium",
+    "otc_available": false,
+    "schedule": "Prescription only"
+  },
+  {
+    "name": "Salbutamol",
+    "generic_name": "Salbutamol sulfate",
+    "aliases": ["Albuterol", "Ventolin", "ProAir", "Proventil"],
+    "brand_names": ["Ventolin", "ProAir", "Proventil", "Airomir"],
+    "drug_class": "Short-Acting Beta-2 Agonist (SABA) Bronchodilator",
+    "use_case": "Relief of acute bronchospasm in asthma, COPD, and exercise-induced bronchospasm. Rescue inhaler.",
+    "mechanism": "Selectively stimulates beta-2 adrenergic receptors in bronchial smooth muscle, causing bronchodilation.",
+    "dosage_forms": ["Metered-dose inhaler (MDI)", "Dry powder inhaler", "Nebuliser solution", "Tablets", "Syrup"],
+    "common_dosages": {
+      "adult": "Inhaler: 1–2 puffs (100mcg each) every 4–6h as needed. Nebuliser: 2.5mg in 2.5mL.",
+      "pediatric": "Inhaler: 1–2 puffs every 4–6h. Nebuliser: 1.25–2.5mg under medical supervision.",
+      "elderly": "Standard dose; monitor heart rate."
+    },
+    "side_effects": {
+      "common": ["Tremor", "Palpitations", "Tachycardia", "Headache", "Muscle cramps"],
+      "serious": ["Hypokalaemia (high doses)", "Paradoxical bronchospasm", "Cardiac arrhythmias (overdose)"]
+    },
+    "causes_drowsiness": false,
+    "contraindications": ["Hypersensitivity to salbutamol"],
+    "interactions": ["Beta-blockers (antagonism)", "Digoxin (hypokalaemia increases toxicity)", "Theophylline (additive effects)", "MAO inhibitors"],
+    "age_warnings": {
+      "pediatric": "Safe for all ages; use spacer device for children <5 years.",
+      "geriatric": "Monitor cardiac side effects; pre-existing arrhythmias.",
+      "pregnancy": "Category C – commonly used; benefits outweigh risks in uncontrolled asthma."
+    },
+    "alternatives": ["Terbutaline", "Levalbuterol", "Ipratropium (COPD)", "Formoterol (LABA)"],
+    "severity_level": "low",
+    "otc_available": false,
+    "schedule": "Prescription only (inhaler); OTC in some countries"
+  },
+  {
+    "name": "Codeine",
+    "generic_name": "Codeine phosphate",
+    "aliases": ["Tylenol with Codeine", "Codipront", "Nurofen Plus"],
+    "brand_names": ["Tylenol #3", "Codipront", "Solpadeine"],
+    "drug_class": "Opioid analgesic / Antitussive",
+    "use_case": "Mild to moderate pain (usually in combination products). Cough suppression. Diarrhoea.",
+    "mechanism": "Prodrug metabolised to morphine by CYP2D6. Binds mu-opioid receptors, reducing pain transmission and cough reflex.",
+    "dosage_forms": ["Tablets", "Oral solution", "Injection (rarely)", "Combined products"],
+    "common_dosages": {
+      "adult": "15–60mg every 4 hours for pain. Max 240mg/day.",
+      "pediatric": "CONTRAINDICATED in children <12 years. Avoid in children 12–18 with respiratory issues.",
+      "elderly": "Start at lowest dose; risk of respiratory depression and constipation."
+    },
+    "side_effects": {
+      "common": ["Constipation", "Nausea", "Drowsiness", "Dizziness", "Vomiting"],
+      "serious": ["Respiratory depression", "Opioid dependence", "Death (overdose)", "Ultra-rapid metaboliser toxicity in children"]
+    },
+    "causes_drowsiness": true,
+    "contraindications": ["Children <12 years", "Post-tonsillectomy in children", "Respiratory depression", "Acute asthma", "MAO inhibitor use"],
+    "interactions": ["CNS depressants (additive)", "MAO inhibitors (serotonin syndrome)", "CYP2D6 inhibitors (reduced effect)", "Alcohol"],
+    "age_warnings": {
+      "pediatric": "CONTRAINDICATED under 12 years. FDA black box warning: deaths reported in children after tonsillectomy. Ultra-rapid CYP2D6 metabolisers produce fatal morphine levels.",
+      "geriatric": "Start at 25–50% of normal dose. Monitor for respiratory depression and constipation.",
+      "pregnancy": "Category C; chronic use causes neonatal abstinence syndrome. Avoid near delivery."
+    },
+    "alternatives": ["Paracetamol", "Ibuprofen", "Tramadol (adults)", "Dextromethorphan (cough)"],
+    "severity_level": "high",
+    "otc_available": false,
+    "schedule": "Schedule II/III (controlled substance)"
+  },
+  {
+    "name": "Diazepam",
+    "generic_name": "Diazepam",
+    "aliases": ["Valium", "Diastat", "Diazemuls"],
+    "brand_names": ["Valium", "Diastat", "Diazemuls"],
+    "drug_class": "Benzodiazepine (Anxiolytic / Sedative / Anticonvulsant / Muscle relaxant)",
+    "use_case": "Anxiety disorders, alcohol withdrawal, seizures (status epilepticus), muscle spasm, sedation before procedures.",
+    "mechanism": "Potentiates GABA-A receptor activity, enhancing chloride ion influx, causing CNS depression.",
+    "dosage_forms": ["Tablets", "IV injection", "Rectal gel", "Oral solution"],
+    "common_dosages": {
+      "adult": "Anxiety: 2–10mg 2–4 times daily. Seizures: 5–10mg IV. Muscle spasm: 5mg TID.",
+      "pediatric": "Seizures: 0.1–0.3mg/kg IV slowly. Only under specialist guidance.",
+      "elderly": "2.5–5mg; maximum 10mg/day. Clearance reduced by 50%."
+    },
+    "side_effects": {
+      "common": ["Drowsiness", "Sedation", "Ataxia", "Confusion", "Memory impairment"],
+      "serious": ["Respiratory depression (especially IV)", "Physical dependence", "Paradoxical aggression", "Anterograde amnesia"]
+    },
+    "causes_drowsiness": true,
+    "contraindications": ["Myasthenia gravis", "Severe respiratory insufficiency", "Sleep apnoea", "Severe hepatic impairment", "Angle-closure glaucoma"],
+    "interactions": ["Opioids (respiratory depression – BLACK BOX)", "Alcohol (CNS depression)", "CYP3A4 inhibitors (increase levels)", "Other CNS depressants"],
+    "age_warnings": {
+      "pediatric": "Only for seizure emergencies in children <6 months. Risk of respiratory arrest.",
+      "geriatric": "HIGH-RISK in elderly (Beers Criteria). Risk of falls, hip fractures, cognitive decline. Reduce dose by 50%.",
+      "pregnancy": "Category D – neonatal withdrawal and floppy infant syndrome. Avoid in 1st trimester."
+    },
+    "alternatives": ["SSRIs/SNRIs (long-term anxiety)", "Buspirone", "Lorazepam (shorter-acting)", "Clonazepam", "Pregabalin"],
+    "severity_level": "high",
+    "otc_available": false,
+    "schedule": "Schedule IV controlled substance"
+  },
+  {
+    "name": "Levothyroxine",
+    "generic_name": "Levothyroxine sodium",
+    "aliases": ["Synthroid", "Eltroxin", "Euthyrox", "T4"],
+    "brand_names": ["Synthroid", "Eltroxin", "Euthyrox", "Levoxyl"],
+    "drug_class": "Thyroid hormone replacement",
+    "use_case": "Hypothyroidism, thyroid cancer (suppression therapy), myxoedema coma.",
+    "mechanism": "Synthetic T4 that is converted to active T3 peripherally, restoring normal thyroid hormone levels.",
+    "dosage_forms": ["Tablets", "IV injection", "Capsules"],
+    "common_dosages": {
+      "adult": "Start 25–50mcg/day; increase by 25–50mcg every 4–6 weeks. Target TSH. Average maintenance 100–200mcg/day.",
+      "pediatric": "Neonates: 10–15mcg/kg/day. Children: 3–6mcg/kg/day (higher needs in childhood).",
+      "elderly": "Start 12.5–25mcg; titrate slowly. Cardiac risk."
+    },
+    "side_effects": {
+      "common": ["Tachycardia (if overdosed)", "Palpitations", "Weight loss", "Insomnia", "Heat intolerance"],
+      "serious": ["Atrial fibrillation", "Osteoporosis (long-term excess)", "Adrenal crisis (if adrenal insufficiency untreated)", "Angina exacerbation"]
+    },
+    "causes_drowsiness": false,
+    "contraindications": ["Untreated adrenal insufficiency", "Thyrotoxicosis (unless hypothyroidism component)"],
+    "interactions": ["Calcium/Iron (reduce absorption – take 4h apart)", "Warfarin (increased anticoagulation)", "Digoxin (altered levels)", "Antacids", "Cholestyramine"],
+    "age_warnings": {
+      "pediatric": "Critical for neonatal development. Congenital hypothyroidism treatment must begin immediately.",
+      "geriatric": "Start very low; cardiac arrhythmias common if dose escalated too fast.",
+      "pregnancy": "Requirements increase 25–50% during pregnancy. Monitor TSH every trimester."
+    },
+    "alternatives": ["Liothyronine (T3)", "Desiccated thyroid extract (NDT)"],
+    "severity_level": "medium",
+    "otc_available": false,
+    "schedule": "Prescription only"
+  },
+  {
+    "name": "Ciprofloxacin",
+    "generic_name": "Ciprofloxacin hydrochloride",
+    "aliases": ["Cipro", "Ciproxin", "Ciloxan"],
+    "brand_names": ["Cipro", "Ciproxin", "Ciloxan"],
+    "drug_class": "Fluoroquinolone antibiotic",
+    "use_case": "Urinary tract infections, respiratory tract infections, skin/soft tissue infections, bone/joint infections, intraabdominal infections, anthrax post-exposure.",
+    "mechanism": "Inhibits bacterial DNA gyrase and topoisomerase IV, preventing DNA replication and transcription.",
+    "dosage_forms": ["Tablets", "IV infusion", "Eye drops", "Ear drops", "Oral suspension"],
+    "common_dosages": {
+      "adult": "250–750mg twice daily (oral). 200–400mg every 8–12h (IV). Duration 3–14 days.",
+      "pediatric": "Complicated UTI/pyelonephritis only: 10–20mg/kg twice daily. NOT for routine infections.",
+      "elderly": "Reduce dose if CrCl <30. Risk of tendon rupture."
+    },
+    "side_effects": {
+      "common": ["Nausea", "Diarrhoea", "Headache", "Dizziness", "Rash"],
+      "serious": ["Tendinopathy/tendon rupture (Achilles)", "QT prolongation", "Peripheral neuropathy", "C. difficile", "CNS effects (seizures, confusion)"]
+    },
+    "causes_drowsiness": false,
+    "contraindications": ["History of ciprofloxacin/quinolone tendinopathy", "Concurrent tizanidine use"],
+    "interactions": ["Antacids/iron/calcium (reduce absorption – 2h separation)", "Warfarin (increased INR)", "Theophylline (toxicity)", "Tizanidine (contraindicated)", "NSAIDs (CNS seizure risk)"],
+    "age_warnings": {
+      "pediatric": "Avoid in children except for specific indications (anthrax, complicated UTI) – arthropathy risk.",
+      "geriatric": "High risk of Achilles tendon rupture, especially with corticosteroids.",
+      "pregnancy": "Category C – avoid; teratogenic animal data."
+    },
+    "alternatives": ["Trimethoprim-sulfamethoxazole", "Nitrofurantoin (UTI)", "Levofloxacin", "Amoxicillin-clavulanate"],
+    "severity_level": "medium",
+    "otc_available": false,
+    "schedule": "Prescription only"
+  },
+  {
+    "name": "Prednisolone",
+    "generic_name": "Prednisolone",
+    "aliases": ["Prelone", "Millipred", "Orapred"],
+    "brand_names": ["Prelone", "Millipred", "Orapred", "Deltacortril"],
+    "drug_class": "Corticosteroid (Glucocorticoid)",
+    "use_case": "Inflammatory conditions, autoimmune diseases, asthma exacerbations, allergic reactions, nephrotic syndrome, IBD, rheumatoid arthritis.",
+    "mechanism": "Binds glucocorticoid receptors; reduces synthesis of inflammatory mediators (cytokines, prostaglandins). Immunosuppressive.",
+    "dosage_forms": ["Tablets", "Oral solution", "IV injection (methylprednisolone)", "Eye drops"],
+    "common_dosages": {
+      "adult": "5–60mg/day depending on condition. Taper when stopping long-term use.",
+      "pediatric": "1–2mg/kg/day (max 40mg) for most conditions. Weight-based.",
+      "elderly": "Use minimum effective dose; high risk of side effects."
+    },
+    "side_effects": {
+      "common": ["Weight gain", "Increased appetite", "Mood changes", "Insomnia", "Elevated blood glucose"],
+      "serious": ["Adrenal suppression", "Osteoporosis", "Immunosuppression", "Cushing's syndrome", "Peptic ulcers", "Avascular necrosis"]
+    },
+    "causes_drowsiness": false,
+    "contraindications": ["Systemic fungal infection", "Live vaccines during immunosuppression", "Hypersensitivity to prednisolone"],
+    "interactions": ["NSAIDs (GI ulcer risk)", "Warfarin (altered INR)", "Antidiabetics (hyperglycaemia)", "Vaccines (reduced response)", "CYP3A4 inducers"],
+    "age_warnings": {
+      "pediatric": "Growth suppression with prolonged use. Use minimum dose for minimum duration.",
+      "geriatric": "High risk of osteoporosis, fractures, diabetes, and hypertension.",
+      "pregnancy": "Category C – used for fetal lung maturity (betamethasone preferred). Gestational diabetes risk."
+    },
+    "alternatives": ["Dexamethasone", "Methylprednisolone", "Budesonide (IBD)", "Steroid-sparing agents (azathioprine, methotrexate)"],
+    "severity_level": "medium",
+    "otc_available": false,
+    "schedule": "Prescription only"
+  },
+  {
+    "name": "Sertraline",
+    "generic_name": "Sertraline hydrochloride",
+    "aliases": ["Zoloft", "Lustral", "Asentra"],
+    "brand_names": ["Zoloft", "Lustral", "Asentra"],
+    "drug_class": "Selective Serotonin Reuptake Inhibitor (SSRI) Antidepressant",
+    "use_case": "Major depressive disorder, panic disorder, OCD, PTSD, social anxiety disorder, premenstrual dysphoric disorder (PMDD).",
+    "mechanism": "Selectively inhibits serotonin transporter (SERT), increasing synaptic serotonin levels in CNS.",
+    "dosage_forms": ["Tablets", "Oral concentrate"],
+    "common_dosages": {
+      "adult": "Start 50mg once daily; may increase to 200mg/day. Full effect in 4–6 weeks.",
+      "pediatric": "OCD in children 6–17 years: start 25mg/day (6–12y) or 50mg/day (13–17y).",
+      "elderly": "Start 25–50mg; standard dosing generally tolerated."
+    },
+    "side_effects": {
+      "common": ["Nausea", "Diarrhoea", "Insomnia", "Sexual dysfunction", "Dry mouth", "Increased sweating"],
+      "serious": ["Serotonin syndrome", "Suicidal ideation (children/adolescents – BLACK BOX)", "SIADH/hyponatraemia", "QT prolongation (high doses)", "Bleeding"]
+    },
+    "causes_drowsiness": true,
+    "contraindications": ["MAO inhibitor use (within 14 days)", "Pimozide", "Disulfiram (oral concentrate contains alcohol)"],
+    "interactions": ["MAO inhibitors (serotonin syndrome – fatal)", "Pimozide", "NSAIDs/warfarin (bleeding)", "Triptans", "Tramadol (serotonin syndrome)", "Lithium"],
+    "age_warnings": {
+      "pediatric": "FDA BLACK BOX: increased risk of suicidal thinking in children/adolescents. Monitor closely in first weeks. NOT approved for MDD in <18.",
+      "geriatric": "Hyponatraemia risk. Start at 25mg. Monitor sodium levels.",
+      "pregnancy": "Category C – neonatal adaptation syndrome with third-trimester use. Persistent pulmonary hypertension risk."
+    },
+    "alternatives": ["Fluoxetine", "Escitalopram", "Venlafaxine", "Mirtazapine", "Duloxetine"],
+    "severity_level": "medium",
+    "otc_available": false,
+    "schedule": "Prescription only"
+  },
+  {
+    "name": "Warfarin",
+    "generic_name": "Warfarin sodium",
+    "aliases": ["Coumadin", "Jantoven", "Marevan"],
+    "brand_names": ["Coumadin", "Jantoven", "Marevan"],
+    "drug_class": "Vitamin K Antagonist Anticoagulant",
+    "use_case": "Prevention and treatment of venous thromboembolism, atrial fibrillation stroke prevention, mechanical heart valve prophylaxis.",
+    "mechanism": "Inhibits vitamin K epoxide reductase, preventing activation of vitamin K-dependent clotting factors (II, VII, IX, X) and proteins C and S.",
+    "dosage_forms": ["Tablets (multiple strengths: 1mg, 2mg, 3mg, 5mg, 7.5mg, 10mg)"],
+    "common_dosages": {
+      "adult": "Highly individualised. Typical 2–10mg/day. Dose adjusted by INR (target 2.0–3.0 for most indications; 2.5–3.5 for mechanical valves).",
+      "pediatric": "Specialist use only. Weight-based with frequent INR monitoring.",
+      "elderly": "Require lower doses; more sensitive to warfarin effects."
+    },
+    "side_effects": {
+      "common": ["Bleeding (minor)", "Bruising", "Haemorrhage"],
+      "serious": ["Major haemorrhage", "Intracranial bleeding", "Fatal bleeding", "Skin necrosis (protein C deficiency)"]
+    },
+    "causes_drowsiness": false,
+    "contraindications": ["Pregnancy (Category X – embryopathy)", "Active bleeding", "Unsupervised patients at high fall risk", "Malignant hypertension"],
+    "interactions": ["Numerous drug interactions via CYP2C9/CYP3A4", "Vitamin K-rich foods", "Aspirin/NSAIDs", "Antibiotics", "Herbal products (garlic, ginkgo, St John's Wort)"],
+    "age_warnings": {
+      "pediatric": "Specialist use only. Requires very frequent INR monitoring.",
+      "geriatric": "Very high bleeding risk. Frequent INR monitoring. Falls = major risk.",
+      "pregnancy": "Category X – ABSOLUTELY CONTRAINDICATED. Causes warfarin embryopathy, fetal haemorrhage."
+    },
+    "alternatives": ["Rivaroxaban", "Apixaban", "Dabigatran", "Edoxaban (DOACs)", "Heparin (acute)"],
+    "severity_level": "high",
+    "otc_available": false,
+    "schedule": "Prescription only"
+  },
+  {
+    "name": "Insulin",
+    "generic_name": "Insulin (various formulations)",
+    "aliases": ["Humulin", "Novolin", "Lantus", "Levemir", "NovoRapid", "Humalog"],
+    "brand_names": ["Humulin", "Novolin", "Lantus", "Levemir", "NovoRapid", "Tresiba"],
+    "drug_class": "Antidiabetic – Insulin",
+    "use_case": "Type 1 diabetes (essential), Type 2 diabetes (when oral agents insufficient), diabetic ketoacidosis, hyperglycaemic hyperosmolar state.",
+    "mechanism": "Binds insulin receptors, facilitating cellular glucose uptake, inhibiting gluconeogenesis, and promoting glycogen/lipid synthesis.",
+    "dosage_forms": ["SC injection", "IV infusion (regular insulin)", "Insulin pen", "Insulin pump (CSII)"],
+    "common_dosages": {
+      "adult": "Highly individualised based on blood glucose. Typical starting: 0.2–0.5 units/kg/day SC.",
+      "pediatric": "0.5–1.0 unit/kg/day initially; adjusted per glucose monitoring.",
+      "elderly": "Use lower doses; hypoglycaemia risk is high and dangerous."
+    },
+    "side_effects": {
+      "common": ["Hypoglycaemia", "Injection site reactions", "Lipodystrophy", "Weight gain"],
+      "serious": ["Severe hypoglycaemia (seizure, coma, death)", "Hypokalemia (IV regular)", "Anaphylaxis (rare)"]
+    },
+    "causes_drowsiness": false,
+    "contraindications": ["Hypoglycaemia (relative)", "Hypersensitivity to specific formulation excipients"],
+    "interactions": ["Beta-blockers (mask hypoglycaemia symptoms)", "Alcohol (prolonged hypoglycaemia)", "Corticosteroids (increase glucose)", "ACE inhibitors (enhanced glucose lowering)"],
+    "age_warnings": {
+      "pediatric": "Type 1 DM: insulin is life-sustaining. Must use insulin analogue pens with paediatric doses.",
+      "geriatric": "High hypoglycaemia risk. Simplify regimen. Use glucose-monitoring devices.",
+      "pregnancy": "Insulin is the PREFERRED agent for diabetes in pregnancy. Safe for fetus."
+    },
+    "alternatives": ["Metformin (T2DM adjunct)", "GLP-1 agonists", "SGLT2 inhibitors (T2DM, not T1DM)"],
+    "severity_level": "high",
+    "otc_available": false,
+    "schedule": "Prescription only (analogue insulins); OTC in some countries (human insulins)"
+  }
+]

@@ -1,0 +1,64 @@
+# Dosage guidance templates
+# Used when MODEL_PROVIDER=template
+
+default:
+  adult: "Take as directed by your doctor."
+  pediatric: "Dose must be determined by a doctor based on the child's weight and age."
+  elderly: "A lower dose may be required. Follow your doctor's instructions."
+  notes: "Never double a missed dose. Take it as soon as you remember, unless it is almost time for the next dose."
+
+age_specific:
+  infant: # < 2 years
+    general: "Do not give this medicine to infants without explicit medical supervision."
+    note: "Always check with your paediatrician before administering any medicine to infants."
+  child: # 2–11 years
+    general: "Dose is weight-based. Use the oral suspension if available."
+    note: "Never crush tablets unless specified as crushable."
+  adolescent: # 12–17 years
+    general: "Adult doses may apply for older adolescents. Confirm with prescriber."
+  adult: # 18–64 years
+    general: "Standard adult doses apply unless renal or hepatic impairment is present."
+  elderly: # 65+ years
+    general: "Start with the lowest effective dose. Monitor for side effects more carefully."
+    note: "Increased risk of falls with sedating medicines. Review all medications regularly."
+
+by_drug_class:
+  "Analgesic / Antipyretic":
+    adult: "500mg–1000mg every 4–6 hours as needed. Maximum 4g per day."
+    pediatric: "10–15mg/kg every 4–6 hours. Maximum 5 doses in 24 hours."
+    elderly: "500mg every 6–8 hours. Avoid prolonged use of high doses."
+
+  "Penicillin Antibiotic":
+    adult: "250–500mg every 8 hours, or 500–875mg every 12 hours for 7–14 days."
+    pediatric: "20–90mg/kg/day divided every 8–12 hours (weight-based)."
+    elderly: "Standard adult dose; reduce if kidney function is impaired."
+
+  "NSAID":
+    adult: "Take with food. Follow product-specific dosing; do not exceed maximum daily dose."
+    pediatric: "Weight-based dosing required. Avoid in children under 6 months unless prescribed."
+    elderly: "Use the lowest effective dose for the shortest time. Monitor kidney function."
+
+  "Proton Pump Inhibitor":
+    adult: "20–40mg once daily, taken 30–60 minutes before breakfast."
+    pediatric: "Requires specialist prescribing in children."
+    elderly: "Standard adult dose. Review need regularly."
+
+  "Beta Blocker":
+    adult: "Starting dose varies by condition. Do not stop suddenly without medical advice."
+    pediatric: "Specialist prescribing only."
+    elderly: "Start low, go slow. Monitor heart rate and blood pressure."
+
+  "Statin":
+    adult: "Usually 10–40mg once daily in the evening. Dose adjusted based on cholesterol response."
+    pediatric: "Not routinely used in children; specialist prescribing only."
+    elderly: "Standard adult dose; monitor for muscle pain."
+
+  "Benzodiazepine":
+    adult: "Lowest effective dose for the shortest time (typically 2–4 weeks maximum)."
+    pediatric: "Specialist prescribing only."
+    elderly: "Use with extreme caution. Start at half the adult dose."
+
+  "Antihistamine":
+    adult: "Follow product instructions. Sedating types: once daily at bedtime or as directed."
+    pediatric: "Weight-based dosing. Non-sedating preferred for daytime use."
+    elderly: "Non-sedating antihistamines preferred. Avoid sedating types if fall risk."
