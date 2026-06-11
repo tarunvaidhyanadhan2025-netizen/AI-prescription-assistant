@@ -1,92 +1,77 @@
-# ─────────────────────────────────────────────────────────────────────────────
-# render.yaml — RxLens deployment configuration
-# Defines both the backend (Web Service) and frontend (Web Service) on Render.
+# =============================================================================
+# render.yaml — RxLens single-service deployment
+# One Docker web service runs both FastAPI backend + Next.js frontend.
 # Commit this file to the ROOT of your repository.
-# ─────────────────────────────────────────────────────────────────────────────
+# =============================================================================
 
 services:
-  # ── Backend: FastAPI + Tesseract OCR ───────────────────────────────────────
+  # ── Single Docker web service (frontend + backend in one container) ─────────
   - type: web
-    name: rxlens-backend
+    name: rxlens-app
     runtime: docker
-    rootDir: backend
-    dockerfilePath: backend/Dockerfile
-    plan: free          # upgrade to starter ($7/mo) for no spin-down
+    dockerfilePath: Dockerfile        # root-level Dockerfile
+    plan: free
     healthCheckPath: /api/v1/health
 
     envVars:
-      # ── App ──────────────────────────────────────────────────────────────
+      # ── App ──────────────────────────────────────────────────────────────────
       - key: ENVIRONMENT
         value: production
       - key: DEBUG
         value: "false"
       - key: SECRET_KEY
-        generateValue: true   # Render auto-generates a secure random value
+        generateValue: true
 
-      # ── AI Provider (set MODEL_PROVIDER=fallback for the full chain) ──────
+      # ── AI Provider ──────────────────────────────────────────────────────────
       - key: MODEL_PROVIDER
         value: fallback
       - key: FALLBACK_CHAIN
-        value: "gemini:gemini-3.1-flash-lite,gemini:gemini-2.5-flash-lite"
+        value: "gemini:gemini-2.0-flash-lite,gemini:gemini-2.5-flash"
 
-      # ── API Keys (fill these in the Render dashboard — never commit keys) ─
+      # ── API Keys (enter in Render dashboard — never commit real keys) ─────────
       - key: GEMINI_API_KEY
-        sync: false           # "sync: false" = you enter the value in the dashboard
+        sync: false
       - key: OPENAI_API_KEY
         sync: false
 
-      # ── OCR ──────────────────────────────────────────────────────────────
+      # ── OCR ──────────────────────────────────────────────────────────────────
       - key: OCR_PROVIDER
         value: tesseract
       - key: TESSERACT_CMD
         value: /usr/bin/tesseract
 
-      # ── Database (Render PostgreSQL — add a Render Postgres service and
-      #    it will inject DATABASE_URL automatically via fromDatabase below) ─
+      # ── Database (link a Render Postgres service for persistence) ─────────────
+      # Comment this block out if you don't want a database on the free tier.
       - key: DATABASE_URL
         fromDatabase:
           name: rxlens-db
           property: connectionString
 
-      # ── CORS: allow your frontend URL ─────────────────────────────────────
+      # ── CORS (frontend is on same container, but allow localhost for dev) ─────
       - key: CORS_ORIGINS
-        value: '["https://rxlens-frontend.onrender.com","http://localhost:3000"]'
+        value: '["http://localhost:3000","https://rxlens-app.onrender.com"]'
 
-      # ── Uploads & Storage ────────────────────────────────────────────────
+      # ── Storage ──────────────────────────────────────────────────────────────
       - key: UPLOAD_DIR
-        value: ./uploads
+        value: /app/backend/uploads
       - key: MAX_UPLOAD_SIZE_MB
         value: "10"
-
-      # ── Vector DB ────────────────────────────────────────────────────────
       - key: VECTOR_DB_ENABLED
         value: "true"
       - key: CHROMA_PERSIST_DIR
-        value: ./chroma_db
+        value: /app/backend/chroma_db
 
-      # ── Python ───────────────────────────────────────────────────────────
+      # ── Frontend env (passed through to Node.js server) ──────────────────────
+      - key: NEXT_PUBLIC_API_URL
+        value: http://localhost:8000       # internal — same container
+
+      # ── Python ───────────────────────────────────────────────────────────────
       - key: PYTHONUNBUFFERED
         value: "1"
 
-  # ── Frontend: Next.js ──────────────────────────────────────────────────────
-  - type: web
-    name: rxlens-frontend
-    runtime: node
-    rootDir: frontend
-    buildCommand: npm install && npm run build
-    startCommand: npm start
-    plan: free
-    envVars:
-      - key: NEXT_PUBLIC_API_URL
-        value: https://rxlens-backend.onrender.com
-      - key: NODE_ENV
-        value: production
-      - key: PORT
-        value: "3000"
-
-  # ── Database: PostgreSQL ───────────────────────────────────────────────────
+# ── Database (optional — comment out to avoid free-tier limit) ────────────────
 databases:
   - name: rxlens-db
-    plan: free            # 1 GB, auto-expires after 90 days on free tier
+    plan: free
     databaseName: rxlens
     user: rxlens

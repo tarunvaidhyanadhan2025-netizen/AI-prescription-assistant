@@ -10,7 +10,11 @@ import type {
 } from '@/types/api'
 import type { PrescriptionAnalysis, Medicine, LifestyleRecommendation, TodayPrecaution } from '@/types/medicine'
 
-const BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000'
+// In production (Docker), the frontend and backend run in the same container.
+// Next.js rewrites proxy /api/** → http://localhost:8000/api/** transparently.
+// In local dev, set NEXT_PUBLIC_API_URL=http://localhost:8000 in .env.local.
+const BASE_URL = process.env.NEXT_PUBLIC_API_URL || ''
+
 
 export const apiClient = axios.create({
   baseURL: BASE_URL,
